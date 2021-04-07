@@ -383,6 +383,13 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .content h5 {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #728394;
+  text-align: center;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -450,13 +457,13 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 50px;
+  height: 35px;
   display: block;
   background: none;
 }
 
 .skills .progress .skill {
-  padding: 10px 0;
+  padding: 2px 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
@@ -471,14 +478,27 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #f2f3f5;
+  background: #ffffff;
 }
 
 .skills .progress-bar {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.1em;
   width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
+  height: 20px;
+  transition: 3s;
+  background: #314755; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #26a0da,
+    #314755
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #26a0da,
+    #314755
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*--------------------------------------------------------------

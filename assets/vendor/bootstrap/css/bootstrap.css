@@ -5840,19 +5840,6 @@ a.badge-dark.focus {
   text-align: center;
   white-space: nowrap;
   transition: width 0.9s ease;
-  background: #0052d4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6fb1fc,
-    #4364f7,
-    #0052d4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #6fb1fc,
-    #4364f7,
-    #0052d4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media (prefers-reduced-motion: reduce) {
