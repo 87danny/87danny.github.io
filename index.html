@@ -32,6 +32,22 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <!--Leaflet CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="assets/css/map.css" />
+    <!-- Leaflet JS goes AFTER Leaflet's CSS -->
+    <script
+        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""
+    ></script>
+
     <!-- =======================================================
   * Template Name: MyResume - v2.2.1
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -145,8 +161,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 content">                                 
-              <img src="assets/img/map_tbd.jpg" class="img-fluid" alt="" />
+            <div class="col-lg-4 content">  
+              <div id="mapid" class="img-fluid"></div>                               
               <h5><strong>Location: </strong>Brooklyn, NY</h5> 
             </div>
           </div>
@@ -214,10 +230,6 @@
                   >Node.Js </div>
                 </div>
               </div>
-            
-
-          
-
             
               <div class="progress">
                 <span class="skill"><i class="val"></i></span>
@@ -1037,5 +1049,8 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Leaflet Map JS File -->
+    <script src="assets/js/map.js"></script>
   </body>
 </html>
