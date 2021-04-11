@@ -4,7 +4,7 @@ mymap.setView([40.61, -73.99], 13);
 
 //https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 //https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png
-L.tileLayer("http://tile.stamen.com/toner/{z}/{x}/{y}{r}.png", {
+L.tileLayer("https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png", {
   attribution: 'Map data &copy; <a href="http://maps.stamen.com">Stamen</a>',
   maxZoom: 18,
   tileSize: 512,
