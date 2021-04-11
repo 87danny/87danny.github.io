@@ -19,7 +19,7 @@ let circle = L.circle([40.61, -73.99], {
   fillOpacity: 0.5,
   radius: 800,
 });
-circle.addTo(mymap);
+circle.addTo(mymap).bindPopup("Bensonhurst");
 
 /*
 //button onclick to map to your location
