@@ -701,7 +701,14 @@ section {
   box-shadow: 2px 2px 5px 2px #d0cdcd;
   resize: both;
   overflow: hidden;
+  height: 960px;
   min-width: 330px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-iframe {
+    height: 600px;
+  }
 }
 
 /*--------------------------------------------------------------
