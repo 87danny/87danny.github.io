@@ -205,12 +205,11 @@ h6 {
   right: 15px;
   top: 15px;
   z-index: 9998;
-  border: 0;
-  font-size: 24px;
+  font-size: 30px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
   color: #fff;
+  background: rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -631,7 +630,8 @@ section {
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
-  border: 1px solid rgb(208, 205, 205);
+  border: 1px solid #d0cdcd;
+  border-radius: 5px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -695,10 +695,13 @@ section {
   padding: 0;
 }
 
-#portfolio-iframe {
-  border: 1px solid rgb(208, 205, 205);
+.portfolio-iframe {
+  border: 1px solid #d0cdcd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 2px #d0cdcd;
   resize: both;
   overflow: hidden;
+  min-width: 330px;
 }
 
 /*--------------------------------------------------------------
