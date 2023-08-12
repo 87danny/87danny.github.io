@@ -150,6 +150,28 @@ h6 {
   height: 220px;
 }
 
+#about-img-container::after {
+  content: "Linkedin";
+  padding: 4px 16px;
+  position: absolute;
+  left: 41%;
+  top: 84%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  -ms-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  background-color: #149ddd;
+  box-shadow: 3px 3px 3px #149ddd;
+  transition: opacity 0.6s ease;
+  opacity: 0;
+}
+
+#about-img-container:hover::after {
+  opacity: 1;
+}
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;
@@ -203,6 +225,8 @@ h6 {
 .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
+  text-shadow: 4px 4px 10px #fff;
+  font-size: 16px;
 }
 
 .nav-menu a:hover i,
@@ -210,6 +234,7 @@ h6 {
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
   color: #149ddd;
+  text-shadow: 4px 4px 10px #fff;
 }
 
 /* Mobile Navigation */
