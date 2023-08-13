@@ -10,203 +10,184 @@
   <link rel="stylesheet"
     href="https://www.saksfifthavenue.com/on/demandware.static/Sites-SaksFifthAvenue-Site/-/en_US/v1674629960669/css/global-BTF.css">
   <title>Popup</title>
+  <style>
+    .banner-heading.womensSmallBold {
+      font-family: Helvetica Neue, helvetica, arial, sans-serif !important;
+    }
+
+    #modal-wrapper {
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    .term-condition-section {
+      height: 80%;
+      overflow: hidden;
+      padding: 60px 35px;
+      border: 1px solid grey;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+    .content-text {
+      background-image: url(https://image.s5a.com/is/image/saks/012423_XL_BANNER_SPENDGET_ENDS?scl=1&amp;qlt=84&amp;fmt=jpg);
+    }
+
+    .custom-popup {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    .custom-popup__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      min-height: 100%;
+    }
+
+    .custom-popup h2 {
+      font-family: Moneta-Regular, Helvetica Neue, helvetica, arial, sans-serif;
+      font-size: 50px;
+      line-height: 1;
+      margin-bottom: 16px
+    }
+
+    .custom-popup h3 {
+      font-family: Moneta-Regular, Helvetica Neue, helvetica, arial, sans-serif;
+      ;
+      font-size: 38px;
+      margin-bottom: 21px
+    }
+
+    .custom-popup h4 {
+      font-family: trade-gothic-next-bold, Helvetica Neue, helvetica, arial, sans-serif;
+      ;
+      font-size: 20px;
+      margin-bottom: 22px
+    }
+
+    .custom-popup h4.custom-popup-h4-fix {
+      margin-bottom: 13px
+    }
+
+    .custom-popup__sbs {
+      display: flex
+    }
+
+    .custom-popup__sbs>div {
+      flex: 1
+    }
+
+    .custom-popup__ctas {
+      margin-bottom: 20px
+    }
+
+    .custom-popup__ctas a {
+      color: #000;
+      background: #fff;
+      display: inline-block;
+      border: 1px solid #000;
+      font-size: 14px;
+      font-family: trade-gothic-next-regular, Helvetica Neue, helvetica, arial, sans-serif;
+      padding: 8px 16px;
+      margin: 0 15px;
+      border-radius: 2px
+    }
+
+    .custom-popup__ctas a:hover {
+      color: #fff;
+      background: #3c3c3c
+    }
+
+    .custom-popup__details {
+      text-align: justify
+    }
+
+    .custom-popup__details p {
+      font-size: 10px
+    }
+
+    .custom-popup__pushdown {
+      margin-top: 25px
+    }
+
+    .custom-popup__hr {
+      padding-top: 10px;
+      border-top: 1px solid #ccc
+    }
+
+    @media screen and (max-width:767px) {
+      .custom-popup h2 {
+        font-size: 10vw !important
+      }
+
+      .custom-popup h3 {
+        font-size: 7vw !important;
+        margin-bottom: 4vw
+      }
+
+      .custom-popup h4 {
+        font-size: 4vw !important;
+        margin-bottom: 4vw
+      }
+
+      .custom-popup h4.custom-popup-h4-fix {
+        margin-bottom: 13px
+      }
+
+      .custom-popup__details p {
+        font-size: 2vw
+      }
+
+      .custom-popup__ctas {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .custom-popup__ctas.mobile-remove-bottom-margin {
+        margin-bottom: 0
+      }
+
+      .custom-popup__ctas a {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px
+      }
+
+      .custom-popup__sbs {
+        flex-direction: column
+      }
+
+      .custom-popup__pushdown {
+        margin-top: 6vw
+      }
+    }
+  </style>
 </head>
 
 <body>
+
   <!-- Global Nav -->
-  <div style="display:flex;margin:10px 0 10px 0;">
+  <div style="display:flex;margin:10px auto;">
     <div class="banner-asset proxi-common">
       <div class="banner-wrapper">
         <div class="content">
           Get up to $250 Off Your Purchase | Use Code STYLE23SF | <a href="#?sre=globalpromo_mod1_spendget"
             class="terms-condition bannerModal" style="text-decoration: underline;"
             tabindex="-1"><strong>DETAILS</strong></a>
-          <style>
-            .term-condition-section {
-              height: 80%;
-              overflow: hidden;
-              padding: 60px 35px;
-              border: 1px solid grey;
-            }
-
-            .custom-popup {
-              overflow-x: hidden;
-              overflow-y: auto;
-              height: 100%
-            }
-
-            .custom-popup__wrapper {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              text-align: center;
-              min-height: 100%
-            }
-
-            .custom-popup h2 {
-              font-family: Moneta-Regular;
-              font-size: 50px;
-              line-height: 1;
-              margin-bottom: 16px
-            }
-
-            .custom-popup h3 {
-              font-family: Moneta-Regular;
-              font-size: 38px;
-              margin-bottom: 21px
-            }
-
-            .custom-popup h4 {
-              font-family: trade-gothic-next-bold;
-              font-size: 20px;
-              margin-bottom: 22px
-            }
-
-            .custom-popup h4.custom-popup-h4-fix {
-              margin-bottom: 13px
-            }
-
-            .custom-popup__sbs {
-              display: flex
-            }
-
-            .custom-popup__sbs>div {
-              flex: 1
-            }
-
-            .custom-popup__ctas {
-              margin-bottom: 20px
-            }
-
-            .custom-popup__ctas a {
-              color: #000;
-              background: #fff;
-              display: inline-block;
-              border: 1px solid #000;
-              font-size: 14px;
-              font-family: trade-gothic-next-regular, Helvetica Neue, helvetica, arial, sans-serif;
-              padding: 8px 16px;
-              margin: 0 15px;
-              border-radius: 2px
-            }
-
-            .custom-popup__ctas a:hover {
-              color: #fff;
-              background: #3c3c3c
-            }
-
-            .custom-popup__details {
-              text-align: justify
-            }
-
-            .custom-popup__details p {
-              font-size: 10px
-            }
-
-            .custom-popup__pushdown {
-              margin-top: 25px
-            }
-
-            .custom-popup__hr {
-              padding-top: 10px;
-              border-top: 1px solid #ccc
-            }
-
-            @media screen and (max-width:767px) {
-              .custom-popup h2 {
-                font-size: 10vw !important
-              }
-
-              .custom-popup h3 {
-                font-size: 7vw !important;
-                margin-bottom: 4vw
-              }
-
-              .custom-popup h4 {
-                font-size: 4vw !important;
-                margin-bottom: 4vw
-              }
-
-              .custom-popup h4.custom-popup-h4-fix {
-                margin-bottom: 13px
-              }
-
-              .custom-popup__details p {
-                font-size: 2vw
-              }
-
-              .custom-popup__ctas {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto
-              }
-
-              .custom-popup__ctas.mobile-remove-bottom-margin {
-                margin-bottom: 0
-              }
-
-              .custom-popup__ctas a {
-                width: 100%;
-                display: block;
-                margin-right: 0;
-                margin-left: 0;
-                margin-bottom: 20px
-              }
-
-              .custom-popup__sbs {
-                flex-direction: column
-              }
-
-              .custom-popup__pushdown {
-                margin-top: 6vw
-              }
-            }
-          </style>
-          <div class="term-condition-section hide">
-            <div class="custom-popup">
-              <div class="custom-popup__wrapper">
-                <div>
-                  <h4 class="custom-popup-h4-fix">Shop Today &amp; Get</h4>
-                  <h2>Up to $250 off</h2>
-                  <h4 class="custom-popup-h4-fix">Your Purchase</h4>
-                  <p>Tuesday, January 24 through Thursday, January 26</p>
-                  <p><b>$50</b> off your $250 purchase<br>
-                    <b>$100</b> off your $450 purchase<br>
-                    <b>$175</b> off your $750 purchase<br>
-                    <b>$250</b> off your $1000 purchase
-                  </p>
-                  <p>Online Only</p>
-                  <p>Use Code <strong>STYLE23SF</strong> at Checkout</p>
-                </div>
-                <div class="custom-popup__ctas mobile-remove-bottom-margin">
-                  <a href="/c/women-s-apparel?pmid=20928500" tabindex="-1">
-                    <span>Shop Women’s</span>
-                  </a>
-                  <a href="/c/men/apparel?pmid=20928500" tabindex="-1">
-                    <span>Shop Men’s </span>
-                  </a>
-                </div>
-                <div class="custom-popup__details custom-popup__pushdown custom-popup__hr">
-                  <p>We will take $50 off your $250 purchase, $100 off your $450 purchase, $175 off your $750
-                    purchase,
-                    or $250 off your purchase of $1000 or more now through January 26, 2023 at 11:59pm (ET). Enter
-                    promotional code STYLE23SF at checkout. Code valid once per account. No adjustments to prior
-                    purchases. Offer valid at saks.com only (excludes Saks Fifth Avenue stores, Saks OFF 5TH stores
-                    and
-                    saksoff5th.com). Not valid on pre-order items, Beauty &amp; Fragrance purchases, the purchase of
-                    gift cards, charitable items or Saks Fifth Avenue employee purchases. Cannot be combined with any
-                    other promotions. Some exclusions may apply.
-                    <br><br>
-                    Promotion may be suspended or terminated at any time. Promotional value is for promotional
-                    purposes
-                    only, without money or other value given in exchange.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <span class="terms-condition-close svg-36-avenue-Up_Copy svg-36-avenue-Up_Copy-dims"
-              id="terms-condition-close"></span>
-          </div>
         </div>
       </div>
     </div>
@@ -216,157 +197,16 @@
   <!-- Banner -->
   <div class="wrapper-content hero-banner promo-banner">
     <div class="content-body withinCenter withinCenter copyStyleWhite copyStyleMobileWhite">
-      <div class="content-text"
-        style="background: url(https://image.s5a.com/is/image/saks/012423_XL_BANNER_SPENDGET_ENDS?scl=1&amp;qlt=84&amp;fmt=jpg)">
+      <div class="content-text">
         <div class="row content-row">
           <div class="col-sm-6 col-md-5 cols">
             <div class="banner-heading womensSmallBold">
               GET UP TO $250 OFF YOUR PURCHASE
             </div>
           </div>
+
           <div class="col-sm-3 col-md-4 cols details-holder">
             <div class="post-button-details">
-              <style>
-                .term-condition-section {
-                  height: 80%;
-                  overflow: hidden;
-                  padding: 60px 35px;
-                  border: 1px solid grey;
-                }
-
-                .custom-popup {
-                  overflow-x: hidden;
-                  overflow-y: auto;
-                  height: 100%
-                }
-
-                .custom-popup__wrapper {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  text-align: center;
-                  min-height: 100%
-                }
-
-                .custom-popup h2 {
-                  font-family: Moneta-Regular;
-                  font-size: 50px;
-                  line-height: 1;
-                  margin-bottom: 16px
-                }
-
-                .custom-popup h3 {
-                  font-family: Moneta-Regular;
-                  font-size: 38px;
-                  margin-bottom: 21px
-                }
-
-                .custom-popup h4 {
-                  font-family: trade-gothic-next-bold;
-                  font-size: 20px;
-                  margin-bottom: 22px
-                }
-
-                .custom-popup h4.custom-popup-h4-fix {
-                  margin-bottom: 13px
-                }
-
-                .custom-popup__sbs {
-                  display: flex
-                }
-
-                .custom-popup__sbs>div {
-                  flex: 1
-                }
-
-                .custom-popup__ctas {
-                  margin-bottom: 20px
-                }
-
-                .custom-popup__ctas a {
-                  color: #000;
-                  background: #fff;
-                  display: inline-block;
-                  border: 1px solid #000;
-                  font-size: 14px;
-                  font-family: trade-gothic-next-regular, Helvetica Neue, helvetica, arial, sans-serif;
-                  padding: 8px 16px;
-                  margin: 0 15px;
-                  border-radius: 2px
-                }
-
-                .custom-popup__ctas a:hover {
-                  color: #fff;
-                  background: #3c3c3c
-                }
-
-                .custom-popup__details {
-                  text-align: justify
-                }
-
-                .custom-popup__details p {
-                  font-size: 10px
-                }
-
-                .custom-popup__pushdown {
-                  margin-top: 25px
-                }
-
-                .custom-popup__hr {
-                  padding-top: 10px;
-                  border-top: 1px solid #ccc
-                }
-
-                @media screen and (max-width:767px) {
-                  .custom-popup h2 {
-                    font-size: 10vw !important
-                  }
-
-                  .custom-popup h3 {
-                    font-size: 7vw !important;
-                    margin-bottom: 4vw
-                  }
-
-                  .custom-popup h4 {
-                    font-size: 4vw !important;
-                    margin-bottom: 4vw
-                  }
-
-                  .custom-popup h4.custom-popup-h4-fix {
-                    margin-bottom: 13px
-                  }
-
-                  .custom-popup__details p {
-                    font-size: 2vw
-                  }
-
-                  .custom-popup__ctas {
-                    width: 80%;
-                    margin-left: auto;
-                    margin-right: auto
-                  }
-
-                  .custom-popup__ctas.mobile-remove-bottom-margin {
-                    margin-bottom: 0
-                  }
-
-                  .custom-popup__ctas a {
-                    width: 100%;
-                    display: block;
-                    margin-right: 0;
-                    margin-left: 0;
-                    margin-bottom: 20px
-                  }
-
-                  .custom-popup__sbs {
-                    flex-direction: column
-                  }
-
-                  .custom-popup__pushdown {
-                    margin-top: 6vw
-                  }
-                }
-              </style>
               <div class="banner-asset proxi-common">
                 <div class="banner-wrapper">
                   <div class="content">
@@ -378,6 +218,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-sm-3 col-md-3 cols cta-links-wrap">
             <div class="cta-links">
               <div class="cta-link d-none d-lg-block link-text-only">
@@ -426,21 +267,87 @@
   </div>
   <!-- End of Banner -->
 
+  <!-- Begin Modal Wrapper -->
+  <div id="modal-wrapper">
+
+    <div class="term-condition-section">
+      <div class="custom-popup">
+        <div class="custom-popup__wrapper">
+          <div>
+            <h4 class="custom-popup-h4-fix">Shop Today &amp; Get</h4>
+            <h2>Up to $250 off</h2>
+            <h4 class="custom-popup-h4-fix">Your Purchase</h4>
+            <p>Tuesday, January 24 through Thursday, January 26</p>
+            <p><b>$50</b> off your $250 purchase<br>
+              <b>$100</b> off your $450 purchase<br>
+              <b>$175</b> off your $750 purchase<br>
+              <b>$250</b> off your $1000 purchase
+            </p>
+            <p>Online Only</p>
+            <p>Use Code <strong>STYLE23SF</strong> at Checkout</p>
+          </div>
+          <div class="custom-popup__ctas mobile-remove-bottom-margin">
+            <a href="/c/women-s-apparel?pmid=20928500" tabindex="-1">
+              <span>Shop Women’s</span>
+            </a>
+            <a href="/c/men/apparel?pmid=20928500" tabindex="-1">
+              <span>Shop Men’s </span>
+            </a>
+          </div>
+          <div class="custom-popup__details custom-popup__pushdown custom-popup__hr">
+            <p>We will take $50 off your $250 purchase, $100 off your $450 purchase, $175 off your $750
+              purchase,
+              or $250 off your purchase of $1000 or more now through January 26, 2023 at 11:59pm (ET). Enter
+              promotional code STYLE23SF at checkout. Code valid once per account. No adjustments to prior
+              purchases. Offer valid at saks.com only (excludes Saks Fifth Avenue stores, Saks OFF 5TH stores
+              and
+              saksoff5th.com). Not valid on pre-order items, Beauty &amp; Fragrance purchases, the purchase of
+              gift cards, charitable items or Saks Fifth Avenue employee purchases. Cannot be combined with any
+              other promotions. Some exclusions may apply.
+              <br><br>
+              Promotion may be suspended or terminated at any time. Promotional value is for promotional
+              purposes
+              only, without money or other value given in exchange.
+            </p>
+          </div>
+          <span class="terms-condition-close svg-36-avenue-Up_Copy svg-36-avenue-Up_Copy-dims"
+            id="terms-condition-close"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End of Modal Wrapper -->
+
   <script>
     /* details_btn is an array */
     const details_btn = document.querySelectorAll(".terms-condition.bannerModal");
     const close_btn = document.querySelector("#terms-condition-close");
-    const terms_body = document.querySelector(".term-condition-section");
+    const modal_wrapper = document.querySelector("#modal-wrapper");
+
+    function openModal() {
+      modal_wrapper.style.display = "block";
+    }
+
+    function closeModal() {
+      modal_wrapper.style.display = "none";
+    }
 
     details_btn.forEach(function (x) {
       x.addEventListener("click", () => {
-        terms_body.classList.toggle("hide");
+        openModal();
       })
     });
 
-    close_btn.addEventListener("click", () => {
-      terms_body.classList.toggle("hide");
-    });
+    close_btn.addEventListener("click", closeModal);
+
+    // Close when user clicks on modal-wrapper (outside of modal content)
+    window.onclick = function (event) {
+      if (event.target == modal_wrapper) {
+        modal_wrapper.style.display = "none";
+      }
+    }
+
   </script>
 
 </body>
