@@ -163,9 +163,15 @@ h6 {
   -ms-transform: rotate(-7deg);
   transform: rotate(-7deg);
   background-color: #149ddd;
-  box-shadow: 3px 3px 3px #149ddd;
+  animation: badge 2s infinite;
   transition: opacity 0.6s ease;
   opacity: 0;
+}
+
+@keyframes badge {
+  40% {
+    box-shadow: 3px 3px 5px 3px #149ddd;
+  }
 }
 
 #about-img-container:hover::after {
