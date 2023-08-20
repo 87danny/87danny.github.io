@@ -151,7 +151,7 @@ h6 {
   height: 220px;
 }
 
-#about-img-container::after {
+#about-img-container a::after {
   content: "Linkedin";
   padding: 4px 16px;
   position: absolute;
@@ -168,22 +168,22 @@ h6 {
   opacity: 0;
 }
 
-@keyframes badge {
-  40% {
-    box-shadow: 1px 1px 3px 1px #149ddd;
-  }
-  from {
-    -ms-transform: rotate(1deg);
-    transform: rotate(1deg);
-  }
-  to {
-    -ms-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-  }
+#about-img-container a:hover::after {
+  opacity: 1;
 }
 
-#about-img-container:hover::after {
-  opacity: 1;
+@keyframes badge {
+  40% {
+    box-shadow: 1px 1px 1px 2px #149ddd;
+  }
+  from {
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  to {
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
 }
 
 @media (max-width: 1199px) {
