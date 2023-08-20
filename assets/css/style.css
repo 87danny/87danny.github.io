@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -328,11 +328,15 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
-  color: #fff;
+#hero-is {
+  font-family: "Petit Formal Script", cursive;
+}
+
+#hero p span:nth-child(2) {
+  color: #e3f1fe;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #0097dd;
 }
 
 @media (min-width: 1024px) {
