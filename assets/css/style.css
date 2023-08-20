@@ -162,7 +162,7 @@ h6 {
   font-weight: bold;
   border-radius: 25px;
   background-color: #149ddd;
-  animation: badge 0.7s infinite;
+  animation: badge 0.6s infinite;
   animation-direction: alternate;
   transition: opacity 0.6s linear;
   opacity: 0;
@@ -170,15 +170,15 @@ h6 {
 
 @keyframes badge {
   40% {
-    box-shadow: 2px 2px 4px 2px #149ddd;
+    box-shadow: 1px 1px 3px 1px #149ddd;
   }
   from {
-    -ms-transform: rotate(4deg);
-    transform: rotate(4deg);
+    -ms-transform: rotate(1deg);
+    transform: rotate(1deg);
   }
   to {
-    -ms-transform: rotate(-4deg);
-    transform: rotate(-4deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
   }
 }
 
