@@ -374,7 +374,7 @@ h6 {
 
 #portfolio-btn a > svg {
   position: absolute;
-  top: 2%;
+  top: 0;
   left: 89%;
   width: 28px;
   fill: #fff;
