@@ -310,7 +310,7 @@ h6 {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  min-width: 330px;
 }
 
 #hero h1 {
@@ -334,9 +334,44 @@ h6 {
 
 #hero p span:nth-child(2) {
   color: #e3f1fe;
+  font-weight: bold;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #0097dd;
+}
+
+#portfolio-btn {
+  position: absolute;
+  bottom: -45%;
+  left: 0;
+  z-index: 1;
+}
+
+#portfolio-btn a {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 25px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+#portfolio-btn a:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+#portfolio-btn a > svg {
+  position: absolute;
+  top: 5%;
+  left: 89%;
+  width: 28px;
+  fill: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#portfolio-btn a:hover svg {
+  transform: rotate(90deg);
+  top: 110%;
+  left: 40%;
 }
 
 @media (min-width: 1024px) {
