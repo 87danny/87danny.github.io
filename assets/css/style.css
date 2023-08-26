@@ -1244,4 +1244,8 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+  #footer .copyright,
+  #footer .credits {
+    color: #000;
+  }
 }
