@@ -341,6 +341,10 @@ h6 {
   font-family: "Petit Formal Script", cursive;
 }
 
+#hero .typed-cursor {
+  display: none;
+}
+
 #hero p span:nth-child(2) {
   color: var(--turquoise);
   font-weight: bold;
