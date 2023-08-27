@@ -406,8 +406,9 @@ h6 {
   width: 28px;
   fill: var(--turquoise);
   transition: ease-in-out 0.4s;
-  transform-origin: -215% 50%;
-  animation: rotation 6s infinite ease-in-out;
+  transform-origin: -190% 80%;
+  animation: rotation 6s infinite linear;
+  animation-delay: 2s;
 }
 
 @keyframes rotation {
