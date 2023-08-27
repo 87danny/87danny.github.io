@@ -319,7 +319,7 @@ h6 {
   top: -10%;
   z-index: 2;
   min-width: 330px;
-  text-shadow: 1px 1px 8px #000;
+  text-shadow: 1px 1px 3px #000;
 }
 
 #hero h1 {
@@ -388,7 +388,7 @@ h6 {
   width: 28px;
   fill: var(--turquoise);
   transition: ease-in-out 0.4s;
-  transform-origin: -230% 50%;
+  transform-origin: -215% 50%;
   animation: rotation 6s infinite ease-in-out;
 }
 
