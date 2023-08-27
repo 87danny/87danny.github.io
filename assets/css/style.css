@@ -779,6 +779,27 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+/* Landing page Portfolio Slider for mobile BEGIN */
+#portfolio-landing {
+  display: none;
+  padding: 0;
+  text-align: center;
+}
+#portfolio-landing .swiper-slide h5 {
+  color: #173b6c;
+  margin: 2% 0 -2%;
+}
+@media (max-width: 768px) {
+  #portfolio-landing {
+    display: block;
+  }
+  .portfolio-container {
+    display: none;
+  }
+}
+/* Landing page Portfolio Slider END */
+
 .portfolio-details {
   padding-top: 40px;
 }
