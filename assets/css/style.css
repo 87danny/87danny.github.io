@@ -318,7 +318,7 @@ h6 {
   top: -10%;
   z-index: 2;
   min-width: 330px;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 1px 1px 4px #000;
 }
 
 #hero h1 {
@@ -354,6 +354,7 @@ h6 {
   z-index: 1;
 }
 
+/* btn with background hover animation */
 #portfolio-btn a {
   color: #fff;
   background: rgba(0, 0, 0, 0.2);
@@ -374,10 +375,11 @@ h6 {
     background: rgba(0, 0, 0, 0.6);
   }
   to {
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(0, 0, 0, 0);
   }
 }
 
+/* btn svg with animation rotation and hover */
 #portfolio-btn a > svg {
   position: absolute;
   top: 0;
@@ -385,12 +387,43 @@ h6 {
   width: 28px;
   fill: var(--turquoise);
   transition: ease-in-out 0.4s;
+  transform-origin: -230% 50%;
+  animation: rotation 6s infinite ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #portfolio-btn a:hover svg {
+  transform-origin: 50% 50%;
   transform: rotate(90deg);
   top: 110%;
   left: 40%;
+  animation: none;
+}
+
+/* btn ::before with hover transition */
+#portfolio-btn a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 50% 50% 5px 5px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transition: 0.6s;
+}
+
+#portfolio-btn a:hover::before {
+  height: 150%;
 }
 
 @media (min-width: 1024px) {
@@ -721,7 +754,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #088395;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -763,14 +796,14 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #088395;
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #088395;
 }
 
 .portfolio-details .portfolio-info {
