@@ -32,6 +32,10 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+:root {
+  --turquoise: #00ffca;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -82,7 +86,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: rgba(0, 36, 120, 0.7);
+  background: rgba(10, 77, 104, 0.7);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   box-shadow: 0 0 10px #0a0f1b;
@@ -139,8 +143,7 @@ h6 {
 
 #header .profile .social-links a:hover {
   font-size: 26px;
-  background: #149ddd;
-  color: #fff;
+  color: var(--turquoise);
   text-decoration: none;
 }
 
@@ -165,7 +168,7 @@ h6 {
   color: #fff;
   font-weight: bold;
   border-radius: 25px;
-  background: rgba(20, 157, 221, 0.9);
+  background: rgba(5, 191, 219, 0.9);
   animation: badge 0.6s infinite;
   animation-direction: alternate;
   transition: opacity 0.6s linear;
@@ -178,7 +181,7 @@ h6 {
 
 @keyframes badge {
   40% {
-    box-shadow: 1px 1px 1px 2px #149ddd;
+    box-shadow: 1px 1px 1px 2px #05bfdb;
   }
   from {
     -ms-transform: rotate(2deg);
@@ -251,7 +254,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
-  color: #a6eff2;
+  color: var(--turquoise);
 }
 
 /* Mobile Navigation */
@@ -312,9 +315,10 @@ h6 {
 
 #hero .hero-container {
   position: relative;
-  top: -8%;
+  top: -10%;
   z-index: 2;
   min-width: 330px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 #hero h1 {
@@ -337,11 +341,10 @@ h6 {
 }
 
 #hero p span:nth-child(2) {
-  color: #e3f1fe;
+  color: var(--turquoise);
   font-weight: bold;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #0097dd;
 }
 
 #portfolio-btn {
@@ -380,7 +383,7 @@ h6 {
   top: 0;
   left: 89%;
   width: 28px;
-  fill: #fff;
+  fill: var(--turquoise);
   transition: ease-in-out 0.4s;
 }
 
@@ -708,13 +711,13 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: rgba(8, 131, 149, 0.75);
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(8, 131, 149, 0.95);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -1238,6 +1241,10 @@ section {
   color: #eaebf0;
 }
 
+#footer .credits a {
+  color: #eaebf0;
+}
+
 @media (max-width: 1199px) {
   #footer {
     position: static;
@@ -1245,7 +1252,8 @@ section {
     padding-right: 20px 15px;
   }
   #footer .copyright,
-  #footer .credits {
+  #footer .credits,
+  #footer .credits a {
     color: #000;
   }
 }
