@@ -196,6 +196,7 @@ h6 {
 @media (max-width: 1199px) {
   #header {
     left: -300px;
+    box-shadow: none;
   }
 
   #main {
@@ -318,7 +319,7 @@ h6 {
   top: -10%;
   z-index: 2;
   min-width: 330px;
-  text-shadow: 1px 1px 4px #000;
+  text-shadow: 1px 1px 8px #000;
 }
 
 #hero h1 {
