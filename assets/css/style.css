@@ -319,7 +319,7 @@ h6 {
   top: -10%;
   z-index: 2;
   min-width: 330px;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 1px 2px #000;
 }
 
 #hero h1 {
@@ -425,14 +425,6 @@ h6 {
   top: 110%;
   left: 40%;
   animation: none;
-}
-
-#portfolio-btn a:visited svg {
-  top: 0;
-  left: 89%;
-  transition: ease-in-out 0.4s;
-  transform-origin: -215% 50%;
-  animation: rotation 6s infinite ease-in-out;
 }
 
 @media (min-width: 1024px) {
