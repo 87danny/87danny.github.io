@@ -782,7 +782,8 @@ section {
 
 /* Landing page Portfolio Slider for mobile BEGIN */
 #portfolio-landing {
-  display: none;
+  visibility: hidden;
+  height: 400px;
   padding: 0;
   text-align: center;
 }
@@ -792,7 +793,8 @@ section {
 }
 @media (max-width: 768px) {
   #portfolio-landing {
-    display: block;
+    visibility: visible;
+    height: 550px;
   }
   .portfolio-container {
     display: none;
