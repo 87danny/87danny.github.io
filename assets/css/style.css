@@ -794,7 +794,7 @@ section {
 @media (max-width: 768px) {
   #portfolio-landing {
     visibility: visible;
-    height: 550px;
+    height: 650px;
   }
   .portfolio-container {
     display: none;
