@@ -883,6 +883,11 @@ section {
   min-width: 330px;
 }
 
+/* Landing Page Portfolio Slide text background */
+.glightbox-clean .gdesc-inner {
+  background-color: #f5f3f3;
+}
+
 @media (max-width: 768px) {
   .portfolio-iframe {
     height: 600px;
