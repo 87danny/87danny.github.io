@@ -894,6 +894,70 @@ section {
   }
 }
 
+/* Portfolio Page Tooltip */
+.tooltip-container {
+  position: relative;
+}
+
+.desktop-description {
+  display: none;
+}
+
+.tooltip-parent {
+  position: absolute;
+  top: 80px;
+  left: 35px;
+  background: #efefef;
+  font-size: 42px;
+  color: #088395;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  box-shadow: 2px 2px 4px 2px #d0cdcd;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  top: 155%;
+  left: 0;
+  color: #000;
+  line-height: 1.2;
+  width: 410px;
+  min-width: 330px;
+  padding: 30px;
+  background: #f7f7f7;
+  box-shadow: 1px 1px 2px 1px #d0cdcd;
+}
+
+.tooltip-parent:hover,
+.tooltip-parent:hover .tooltip {
+  transition: 0.4s ease-in-out;
+}
+
+.tooltip-parent:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 8px 2px #088395;
+}
+
+.tooltip-parent:hover .tooltip {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .desktop-description {
+    display: block;
+    line-height: 1.2;
+    font-size: 0.8rem;
+    padding: 3%;
+    background: rgb(247, 247, 247);
+  }
+
+  .tooltip-parent {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
