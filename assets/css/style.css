@@ -899,6 +899,13 @@ section {
   position: relative;
 }
 
+.tooltip-container h6 {
+  color: #272829;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 .desktop-description {
   display: none;
 }
@@ -907,7 +914,7 @@ section {
   position: absolute;
   top: 80px;
   left: 35px;
-  background: #efefef;
+  background: rgb(239, 239, 239, 0.3);
   font-size: 42px;
   color: #088395;
   border-radius: 5px;
@@ -917,6 +924,7 @@ section {
 }
 
 .tooltip {
+  display: none;
   opacity: 0;
   position: absolute;
   top: 155%;
@@ -942,6 +950,7 @@ section {
 
 .tooltip-parent:hover .tooltip {
   opacity: 1;
+  display: block;
 }
 
 @media (max-width: 768px) {
