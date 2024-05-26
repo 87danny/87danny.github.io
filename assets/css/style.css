@@ -297,7 +297,17 @@ h6 {
   background-size: cover;
 }
 
-#hero:before {
+/* background overlay "1-line hack" utility class */
+.overlay {
+  border-image: linear-gradient(
+      rgba(39, 77, 112, 0.1) 15%,
+      rgba(36, 36, 36, 0.35) 30%,
+      rgba(36, 36, 36, 0.45) 99%
+    )
+    fill 1;
+}
+
+/* #hero:before {
   height: 100vh;
   content: "";
   background-image: linear-gradient(
@@ -312,7 +322,7 @@ h6 {
   left: 0;
   right: 0;
   z-index: 1;
-}
+} */
 
 #hero .hero-container {
   position: relative;
