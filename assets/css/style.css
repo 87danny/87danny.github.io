@@ -301,10 +301,11 @@ h6 {
 .overlay {
   border-image: linear-gradient(
       rgba(39, 77, 112, 0.1) 15%,
-      rgba(36, 36, 36, 0.35) 30%,
+      rgba(36, 36, 36, 0.35) 80%,
       rgba(36, 36, 36, 0.45) 99%
     )
     fill 1;
+  transition: 15s;
 }
 
 /* #hero:before {
