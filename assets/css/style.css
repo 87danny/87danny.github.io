@@ -795,6 +795,7 @@ section {
   background: #088395;
   color: #fff;
   font-size: 0.8rem;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -804,6 +805,7 @@ section {
   font-size: 0.95rem;
   color: #fff;
   transition: 0.3s;
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
