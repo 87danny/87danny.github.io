@@ -792,20 +792,22 @@ section {
   border-radius: 0 0 10px 10px;
   height: 35px;
   text-align: center;
-  background: #088395;
+  background: #066674;
   color: #fff;
   font-size: 0.8rem;
-  opacity: 0.9;
+  background-image: linear-gradient(to top, #088395 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .portfolio-caption:hover {
   font-size: 0.95rem;
   color: #fff;
   transition: 0.3s;
-  opacity: 1;
+  background-position: top;
 }
 
 /*--------------------------------------------------------------
