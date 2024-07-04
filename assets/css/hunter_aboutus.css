@@ -1,0 +1,416 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* kevin powell 2024 additions */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+/* kevin powell 2024 additions end */
+
+/* END OF RESET */
+
+/* 
+@font-face {
+  font-family: "trade-gothic-next-condensed";
+  src: url("https://www.saksfifthavenue.com/on/demandware.static/Sites-SaksFifthAvenue-Site/-/default/dw11129562/fonts/trade-gothic/subset-trade-gothic-next-condensed.woff2")
+      format("woff2"),
+    url("https://www.saksfifthavenue.com/on/demandware.static/Sites-SaksFifthAvenue-Site/-/default/dw78d0c591/fonts/trade-gothic/subset-trade-gothic-next-condensed.woff")
+      format("woff"),
+    url("https://www.saksfifthavenue.com/on/demandware.static/Sites-SaksFifthAvenue-Site/-/default/dwb73c2e99/fonts/trade-gothic/trade-gothic-next-condensed.otf")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+} 
+*/
+
+/* 
+<picture>
+  <source media="(max-width:1023px)" srcset="___">
+  <source media="(max-width:767px)" srcset="___">
+  <img src="___" alt="">
+</picture> 
+*/
+
+/* 
+background-position: 1st value- horizontal, 2nd value- vertical
+background: is the shorthand
+
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center; 
+height: 5px; 
+background-image: url(""); 
+*/
+
+/* 
+Center a div with absolute
+div.relative {position: relative;}
+  div.absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } 
+*/
+
+/*  
+Make a horizontal scrollable div/list of elements (invisible scrollbar, snaps to each element)
+.container::-webkit-scrollbar {
+    display: none;
+  }
+  .container {
+    overflow-y: hidden;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .child {
+    scroll-snap-align: start;
+  } 
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  transform: scaleX(1.2);
+  transform: scaleY(0.9);
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+.container {
+  margin: 3rem auto;
+  max-width: 1330px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* img can be centered in a container ONLY if display:block is set */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles begins */
+
+header {
+  text-align: center;
+  background: #ebe9e7;
+}
+
+#hb_header_video {
+  width: 100%;
+}
+
+.header_features {
+  max-width: 600px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.header_text_block {
+  line-height: 1.5;
+  margin: 1.5rem auto;
+}
+
+.header_text_block h2 {
+  margin-bottom: 1rem;
+}
+
+.header_features_icons a {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 25%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+/* Header styles ends */
+
+/* Scrolling text styles begins */
+.scroll_text {
+  margin: 1.5rem auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* Scrolling text styles ends */
+
+/* draggable flickity carousel styles starts */
+.flickity-page-dots {
+  display: none;
+}
+.flickity-button {
+  display: none;
+}
+
+.carousel-cell a {
+  text-decoration: none;
+  color: #000;
+}
+
+.carousel-cell a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.slide-label {
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-cell {
+    width: 90%;
+  }
+
+  .carousel-cell img {
+    width: 99.6%;
+  }
+}
+/* draggable flickity carousel styles ends */
+
+/* two carousel desktop styles start*/
+@media only screen and (min-width: 767px) {
+  .two_carousel .carousel-cell {
+    width: 49.8%;
+    margin: 0 0.2%;
+  }
+}
+/* two carousel desktop styles end*/
+
+/* heritage section styles starts */
+.heritage_section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  background: #f7f7f7;
+}
+
+.heritage_section div {
+  flex: 0 0 50%;
+}
+
+.heritage_text {
+  padding: 0 3rem;
+}
+
+.heritage_text h3 {
+  margin-bottom: 1rem;
+}
+
+.heritage_bg {
+  background: #f0f0f0;
+}
+
+@media only screen and (max-width: 767px) {
+  .heritage_section {
+    flex-direction: column;
+    padding: 3rem 0 0;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+/* heritage section styles ends */
+
+/* explore originals header styles start */
+.explore_originals_header {
+  margin-top: 3rem;
+}
+.explore_originals_header h3 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .explore_originals_header {
+    margin-left: 5%;
+  }
+}
+/* explore originals header styles end */
+
+/* four carousel desktop & mobile styles start*/
+
+.four_carousel {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .four_carousel .carousel-cell {
+    width: 24%;
+    margin: 0 1%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .four_carousel {
+    margin-left: 5%;
+  }
+
+  .four_carousel .carousel-cell img {
+    width: 96%;
+  }
+}
+/* four carousel desktop & mobile styles end*/
+
+/* @media only screen and (max-width: 1023px) {
+} */
+
+/* @media only screen and (max-width: 767px) {
+} */
