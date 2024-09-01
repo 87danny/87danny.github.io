@@ -282,10 +282,44 @@ header {
 /* Header styles ends */
 
 /* Scrolling text styles begins */
-.scroll_text {
-  margin: 1.5rem auto;
+.marquee {
+  --gap: 60px;
+  display: flex;
+  /* the ULs will have a gap of 60px consistent with the LIs */
+  gap: var(--gap);
+  /* overflowing text is hidden as it scrolls */
+  overflow: hidden;
+  /* prevents text highlighting */
+  user-select: none;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+/* the UL is duplicated within the HTML so that as one UL scrolls OFF screen, the 2nd UL scrolls ON screen */
+.marquee ul {
+  display: flex;
+  /* space-between ensures the list-items are evenly distributed, but this ONLY works because we have enough list items to fill up the */
+  justify-content: space-between;
+  align-items: center;
+  /* flex shrink ensures the width of the ULs extends pass the parent*/
+  flex-shrink: 0;
+  /* min-width 100% ensures the entire width is covered */
+  min-width: 100%;
+  user-select: none;
+  /* animation runs infinitely with each iteration lasting 50 seconds */
+  animation: scrolling-text 50s linear infinite;
+  /* the LIs will have a gap of 60px conistent with the ULs*/
+  gap: var(--gap);
+  letter-spacing: 1px;
+  list-style: none;
+}
+
+/* the 2nd UL will scroll ON screen with the correct spacing using calc(). We ensure it scrolls onscreen at -100% with the width of 60px subtracted */
+@keyframes scrolling-text {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
 /* Scrolling text styles ends */
 
