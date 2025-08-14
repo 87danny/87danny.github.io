@@ -38,7 +38,8 @@
       max-height: 90vh;
       width: 90%;
       max-width: 600px;
-      overflow: hidden;
+      overflow-y: auto;
+      /* 'auto' to allow vertical scrolling when needed */
       padding: 60px 35px;
       border: 1px solid grey;
       position: absolute;
@@ -54,12 +55,6 @@
 
     .content-text {
       background-image: url(assets/img/portfolio/012423_XL_BANNER_SPENDGET_ENDS.jpeg);
-    }
-
-    .custom-popup {
-      overflow-x: hidden;
-      overflow-y: auto;
-      height: 100%;
     }
 
     .custom-popup__wrapper {
