@@ -814,39 +814,6 @@
     </div>
   </div>
 
-  <!-- START: Iframe scroll fix -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Select all navigation links that point to an anchor on the same page (href starts with #)
-      const navLinks = document.querySelectorAll('nav.editorial_nav a[href^="#"]');
-
-      navLinks.forEach(link => {
-        // Add a click event listener to each link
-        link.addEventListener('click', function (event) {
-          // Prevent the default anchor link behavior, which stops the URL from changing and the browser from jumping
-          event.preventDefault();
-
-          // Get the target element's ID from the href attribute (e.g., "#sec_8")
-          const targetId = this.getAttribute('href');
-          try {
-            const targetElement = document.querySelector(targetId);
-
-            // If the target element exists on the page, scroll to it smoothly
-            if (targetElement) {
-              targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'      // Align the top of the target element with the top of the viewport
-              });
-            }
-          } catch (e) {
-            // In case the selector is invalid, log an error but don't break the page
-            console.error('Could not find element for selector:', targetId);
-          }
-        });
-      });
-    });
-  </script>
-  <!-- END: Iframe scroll fix -->
 </body>
 
 </html>
